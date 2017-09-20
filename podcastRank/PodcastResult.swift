@@ -56,4 +56,3 @@ struct PodcastResult: Codable {
 		}
 	}
 }
-
