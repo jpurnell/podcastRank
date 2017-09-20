@@ -57,7 +57,6 @@ func dailyResults() -> [Rank] {
 let todaysResults = dailyResults()
 let lengthCheck = todaysResults.sorted(by: {$0.podcast.name.count > $1.podcast.name.count})
 for result in todaysResults {
-	let padAmount = lengthCheck[1].podcast.name.count + 4
-	print("\(String(result.rank).leftPadding(toLength: 3, withPad: " ")).\t\(result.podcast.name.padding(toLength: padAmount, withPad: " ", startingAt: 0))\t\(result.date)")
-	print(result.description())
+	let nameWithPadding = result.podcast.name.padding(toLength: lengthCheck[1].podcast.name.count + 4, withPad: " ", startingAt: 0)
+	print("\(String(result.rank).leftPadding(toLength: 3, withPad: " ")).\t\(nameWithPadding)\t\(result.date)")
 }
