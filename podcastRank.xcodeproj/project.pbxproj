@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		7281A93F1F720B4600DAD480 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281A93E1F720B4600DAD480 /* main.swift */; };
 		7281A9461F720BC400DAD480 /* PodcastResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281A9451F720BC400DAD480 /* PodcastResult.swift */; };
+		7281A94B1F720C0700DAD480 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281A9471F720C0700DAD480 /* Constants.swift */; };
+		7281A94C1F720C0700DAD480 /* getData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281A9481F720C0700DAD480 /* getData.swift */; };
+		7281A94D1F720C0700DAD480 /* FeedSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281A9491F720C0700DAD480 /* FeedSettings.swift */; };
+		7281A94E1F720C0700DAD480 /* BookResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281A94A1F720C0700DAD480 /* BookResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +31,10 @@
 		7281A93B1F720B4600DAD480 /* podcastRank */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = podcastRank; sourceTree = BUILT_PRODUCTS_DIR; };
 		7281A93E1F720B4600DAD480 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7281A9451F720BC400DAD480 /* PodcastResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResult.swift; sourceTree = "<group>"; };
+		7281A9471F720C0700DAD480 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7281A9481F720C0700DAD480 /* getData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getData.swift; sourceTree = "<group>"; };
+		7281A9491F720C0700DAD480 /* FeedSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSettings.swift; sourceTree = "<group>"; };
+		7281A94A1F720C0700DAD480 /* BookResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,10 @@
 			children = (
 				7281A93E1F720B4600DAD480 /* main.swift */,
 				7281A9451F720BC400DAD480 /* PodcastResult.swift */,
+				7281A94A1F720C0700DAD480 /* BookResult.swift */,
+				7281A9471F720C0700DAD480 /* Constants.swift */,
+				7281A9491F720C0700DAD480 /* FeedSettings.swift */,
+				7281A9481F720C0700DAD480 /* getData.swift */,
 			);
 			path = podcastRank;
 			sourceTree = "<group>";
@@ -123,8 +135,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7281A94D1F720C0700DAD480 /* FeedSettings.swift in Sources */,
 				7281A93F1F720B4600DAD480 /* main.swift in Sources */,
 				7281A9461F720BC400DAD480 /* PodcastResult.swift in Sources */,
+				7281A94C1F720C0700DAD480 /* getData.swift in Sources */,
+				7281A94B1F720C0700DAD480 /* Constants.swift in Sources */,
+				7281A94E1F720C0700DAD480 /* BookResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
