@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		724ADD462018EE37000E02A9 /* generateDirectoryForPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724ADD452018EE37000E02A9 /* generateDirectoryForPath.swift */; };
+		724ADD482018EE55000E02A9 /* generateURLForPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724ADD472018EE55000E02A9 /* generateURLForPath.swift */; };
+		724ADD4A2018EE63000E02A9 /* writeDataToURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724ADD492018EE63000E02A9 /* writeDataToURL.swift */; };
+		724ADD4C2018EEE9000E02A9 /* generateFileURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724ADD4B2018EEE9000E02A9 /* generateFileURL.swift */; };
+		724ADD4F2018EF22000E02A9 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724ADD4E2018EF22000E02A9 /* Preferences.swift */; };
+		724ADD512018F778000E02A9 /* generateHTMLLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724ADD502018F778000E02A9 /* generateHTMLLink.swift */; };
+		72585011201F6E4A00817EEB /* leftPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72585010201F6E4A00817EEB /* leftPadding.swift */; };
+		72585013201F6E6600817EEB /* buildURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72585012201F6E6600817EEB /* buildURL.swift */; };
+		72585015201F6E7600817EEB /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72585014201F6E7600817EEB /* Rank.swift */; };
+		72585017201F6E8700817EEB /* dailyResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72585016201F6E8700817EEB /* dailyResults.swift */; };
+		72585019201F6E9700817EEB /* writeResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72585018201F6E9700817EEB /* writeResults.swift */; };
 		7281A93F1F720B4600DAD480 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281A93E1F720B4600DAD480 /* main.swift */; };
 		7281A9461F720BC400DAD480 /* PodcastResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281A9451F720BC400DAD480 /* PodcastResult.swift */; };
 		7281A94B1F720C0700DAD480 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281A9471F720C0700DAD480 /* Constants.swift */; };
@@ -28,6 +39,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		724ADD452018EE37000E02A9 /* generateDirectoryForPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generateDirectoryForPath.swift; sourceTree = "<group>"; };
+		724ADD472018EE55000E02A9 /* generateURLForPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generateURLForPath.swift; sourceTree = "<group>"; };
+		724ADD492018EE63000E02A9 /* writeDataToURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = writeDataToURL.swift; sourceTree = "<group>"; };
+		724ADD4B2018EEE9000E02A9 /* generateFileURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generateFileURL.swift; sourceTree = "<group>"; };
+		724ADD4E2018EF22000E02A9 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		724ADD502018F778000E02A9 /* generateHTMLLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generateHTMLLink.swift; sourceTree = "<group>"; };
+		72585010201F6E4A00817EEB /* leftPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leftPadding.swift; sourceTree = "<group>"; };
+		72585012201F6E6600817EEB /* buildURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildURL.swift; sourceTree = "<group>"; };
+		72585014201F6E7600817EEB /* Rank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rank.swift; sourceTree = "<group>"; };
+		72585016201F6E8700817EEB /* dailyResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyResults.swift; sourceTree = "<group>"; };
+		72585018201F6E9700817EEB /* writeResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = writeResults.swift; sourceTree = "<group>"; };
 		7281A93B1F720B4600DAD480 /* podcastRank */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = podcastRank; sourceTree = BUILT_PRODUCTS_DIR; };
 		7281A93E1F720B4600DAD480 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7281A9451F720BC400DAD480 /* PodcastResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResult.swift; sourceTree = "<group>"; };
@@ -48,6 +70,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		724ADD4D2018EEFB000E02A9 /* File Save */ = {
+			isa = PBXGroup;
+			children = (
+				724ADD452018EE37000E02A9 /* generateDirectoryForPath.swift */,
+				724ADD472018EE55000E02A9 /* generateURLForPath.swift */,
+				724ADD4B2018EEE9000E02A9 /* generateFileURL.swift */,
+				724ADD492018EE63000E02A9 /* writeDataToURL.swift */,
+			);
+			path = "File Save";
+			sourceTree = "<group>";
+		};
+		7258501A201F6EF600817EEB /* Podcast Rank */ = {
+			isa = PBXGroup;
+			children = (
+				7281A9481F720C0700DAD480 /* getData.swift */,
+				72585012201F6E6600817EEB /* buildURL.swift */,
+				724ADD502018F778000E02A9 /* generateHTMLLink.swift */,
+				72585018201F6E9700817EEB /* writeResults.swift */,
+				72585016201F6E8700817EEB /* dailyResults.swift */,
+			);
+			path = "Podcast Rank";
+			sourceTree = "<group>";
+		};
+		7258501B201F6F2F00817EEB /* Core Structs */ = {
+			isa = PBXGroup;
+			children = (
+				72585014201F6E7600817EEB /* Rank.swift */,
+				7281A9451F720BC400DAD480 /* PodcastResult.swift */,
+				7281A94A1F720C0700DAD480 /* BookResult.swift */,
+				7281A9471F720C0700DAD480 /* Constants.swift */,
+				7281A9491F720C0700DAD480 /* FeedSettings.swift */,
+			);
+			path = "Core Structs";
+			sourceTree = "<group>";
+		};
+		7258501C201F6F7100817EEB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				72585010201F6E4A00817EEB /* leftPadding.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7281A9321F720B4600DAD480 = {
 			isa = PBXGroup;
 			children = (
@@ -68,11 +133,11 @@
 			isa = PBXGroup;
 			children = (
 				7281A93E1F720B4600DAD480 /* main.swift */,
-				7281A9451F720BC400DAD480 /* PodcastResult.swift */,
-				7281A94A1F720C0700DAD480 /* BookResult.swift */,
-				7281A9471F720C0700DAD480 /* Constants.swift */,
-				7281A9491F720C0700DAD480 /* FeedSettings.swift */,
-				7281A9481F720C0700DAD480 /* getData.swift */,
+				7258501A201F6EF600817EEB /* Podcast Rank */,
+				7258501B201F6F2F00817EEB /* Core Structs */,
+				724ADD4D2018EEFB000E02A9 /* File Save */,
+				7258501C201F6F7100817EEB /* Extensions */,
+				724ADD4E2018EF22000E02A9 /* Preferences.swift */,
 			);
 			path = podcastRank;
 			sourceTree = "<group>";
@@ -104,7 +169,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Justin Purnell";
 				TargetAttributes = {
 					7281A93A1F720B4600DAD480 = {
@@ -136,10 +201,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7281A94D1F720C0700DAD480 /* FeedSettings.swift in Sources */,
+				72585011201F6E4A00817EEB /* leftPadding.swift in Sources */,
+				72585017201F6E8700817EEB /* dailyResults.swift in Sources */,
+				72585013201F6E6600817EEB /* buildURL.swift in Sources */,
+				72585015201F6E7600817EEB /* Rank.swift in Sources */,
 				7281A93F1F720B4600DAD480 /* main.swift in Sources */,
+				724ADD462018EE37000E02A9 /* generateDirectoryForPath.swift in Sources */,
+				724ADD512018F778000E02A9 /* generateHTMLLink.swift in Sources */,
 				7281A9461F720BC400DAD480 /* PodcastResult.swift in Sources */,
+				72585019201F6E9700817EEB /* writeResults.swift in Sources */,
 				7281A94C1F720C0700DAD480 /* getData.swift in Sources */,
+				724ADD482018EE55000E02A9 /* generateURLForPath.swift in Sources */,
+				724ADD4C2018EEE9000E02A9 /* generateFileURL.swift in Sources */,
+				724ADD4F2018EF22000E02A9 /* Preferences.swift in Sources */,
 				7281A94B1F720C0700DAD480 /* Constants.swift in Sources */,
+				724ADD4A2018EE63000E02A9 /* writeDataToURL.swift in Sources */,
 				7281A94E1F720C0700DAD480 /* BookResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +237,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -168,6 +245,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -218,6 +296,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -225,6 +304,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -249,6 +329,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
@@ -256,6 +337,7 @@
 		7281A9431F720B4600DAD480 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BNDA9Y6YV9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -266,6 +348,7 @@
 		7281A9441F720B4600DAD480 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BNDA9Y6YV9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
