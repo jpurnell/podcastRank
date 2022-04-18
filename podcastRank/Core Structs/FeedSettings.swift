@@ -8,7 +8,8 @@
 
 import Foundation
 struct FeedSettings {
-	static let apiBase = "https://rss.itunes.apple.com/api/v1/"
+//	static let apiBase = "https://rss.itunes.apple.com/api/v1/"
+    static let apiBase = "https://rss.applemarketingtools.com/api/v2"
 	static let countryUS = "us"
 	
 	enum MediaType: String {
@@ -102,6 +103,7 @@ struct FeedSettings {
 		
 		struct Podcasts {
 			static let topPodcasts = "top-podcasts/all"
+            static let topPodcastsV2 = "top"
 		}
 		
 		struct MusicVideos {

@@ -9,5 +9,5 @@
 import Foundation
 
 func buildURL(mediaType: FeedSettings.MediaType, feedType: String, number: Int, format: FeedSettings.Format, explicit: FeedSettings.Explicit) -> String {
-	return "\(FeedSettings.apiBase)\(FeedSettings.countryUS)/\(mediaType.rawValue)/\(feedType)/\(number)/\(explicit.rawValue)\(format.rawValue)"
+    return "\(FeedSettings.apiBase)/\(FeedSettings.countryUS)/\(mediaType.rawValue)/\(feedType)/\(number)/\(mediaType.rawValue)\(format.rawValue)"
 }

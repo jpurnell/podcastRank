@@ -9,7 +9,7 @@
 import Foundation
 
 struct PodcastResult: Codable {
-	let feed: PodcastFeed
+	let feed: PodcastFeed?
 	
 	struct PodcastFeed: Codable {
 		let author: AuthorResult
@@ -17,7 +17,7 @@ struct PodcastResult: Codable {
 		let country: String
 		let icon: String
 		let id: String
-		let results: [Podcast]
+		let results: [Podcast]?
 		let title: String
 		let updated: String
 		
@@ -44,7 +44,7 @@ struct PodcastResult: Codable {
 			let kind: String
 			let name: String
 			let primaryGenreName: String?
-			let releaseDate: String
+			let releaseDate: String?
 			let trackCensoredName: String?
 			let trackExplicitness: String?
 			let url: URL
