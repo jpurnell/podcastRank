@@ -34,10 +34,16 @@ struct FeedSettings {
 		case xmlRSS = ".rss"
 		case xmlAtom = ".atom"
 	}
+    
+    enum ResultType: String {
+        case podcast = "podcasts"
+        case podcastEpisodes = "podcast-episodes"
+    }
 	struct FeedType {
 		
 		struct AppleMusic {
-			static let hotTracks = "hot-tracks"
+            static let mostPlayed = "most-played"
+            static let hotTracks = "hot-tracks"
 			static let hotTracksCountry = "hot-tracks-country"
 			static let hotTracksMetal = "hot-tracks-heavy-metal"
 			static let hotTracksNewMusic = "new-music"
@@ -48,6 +54,7 @@ struct FeedSettings {
 		}
 		
 		struct ITunesMusic {
+            static let mostPlayed = "most-played"
 			static let bluegrass = "bluegrass"
 			static let hotAlbums = "hot-albums"
 			static let hotTracks = "hot-tracks"

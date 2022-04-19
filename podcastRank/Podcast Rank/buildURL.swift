@@ -8,6 +8,6 @@
 
 import Foundation
 
-func buildURL(mediaType: FeedSettings.MediaType, feedType: String, number: Int, format: FeedSettings.Format, explicit: FeedSettings.Explicit) -> String {
-    return "\(FeedSettings.apiBase)/\(FeedSettings.countryUS)/\(mediaType.rawValue)/\(feedType)/\(number)/\(mediaType.rawValue)\(format.rawValue)"
+func buildURL(mediaType: FeedSettings.MediaType, feedType: String, number: Int, format: FeedSettings.Format, type: FeedSettings.ResultType) -> String {
+    return "\(FeedSettings.apiBase)/\(FeedSettings.countryUS)/\(mediaType.rawValue)/\(feedType)/\(number)/\(type.rawValue)\(format.rawValue)"
 }

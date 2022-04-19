@@ -9,7 +9,7 @@
 import Foundation
 
 func dailyResults() -> [Rank] {
-	let feed = buildURL(mediaType: .podcasts, feedType: FeedSettings.FeedType.Podcasts.topPodcastsV2, number: 100, format: .json, explicit: .explicit)
+    let feed = buildURL(mediaType: .podcasts, feedType: FeedSettings.FeedType.Podcasts.topPodcastsV2, number: 100, format: .json, type: .podcast)
     print(feed)
 	let podcastData = getData(from: feed)
 	let decoder = JSONDecoder()
