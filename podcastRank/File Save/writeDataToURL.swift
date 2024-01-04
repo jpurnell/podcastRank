@@ -7,15 +7,17 @@
 //
 
 import Foundation
+import OSLog
 
 func write(data: Data, to url: URL) -> () {
+	let logger = Logger(subsystem: "podastRank > File Save > WriteDataToURL", category: "write")
 	do {
 		if data.count == 0 {
-			print("Data length 0, will not attempt to write")
+			logger.error("Data length 0, will not attempt to write")
 		} else {
 			try data.write(to: url)
 		}
 	} catch {
-		print("Error writing \(data.description) to \(String(describing: url))\n")
+		logger.error("Error writing \(data.description, privacy: .public) to \(String(describing: url), privacy: .auto)\n")
 	}
 }

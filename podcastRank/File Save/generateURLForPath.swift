@@ -7,10 +7,13 @@
 //
 
 import Foundation
+import OSLog
 
 func generateURLFor(fileName: String, to path: String = Preferences.Save.fileDirectory, format: String = ".tsv") throws -> URL {
+	let logger = Logger(subsystem: "podcastRank > File Save > Generate URL for Path", category: "generateURLFor")
+	
 	let fileURLString = path + fileName + format
 	let fileURL = URL(fileURLWithPath: fileURLString)
-	print("Wrote \(fileName) to \(path)")
+	logger.info("Wrote \(fileName + format, privacy: .public) to \(path, privacy: .auto)")
 	return fileURL
 }

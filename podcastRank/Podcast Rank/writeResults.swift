@@ -7,13 +7,15 @@
 //
 
 import Foundation
+import OSLog
 
-func writeResults(for todaysResults: [Rank]) -> () {
+func archive(_ todaysResults: [Rank]) -> () {
+	let logger = Logger(subsystem: "podcastRank > Podcast Rank > writeResults", category: "archive")
 	let dateFormatter = DateFormatter()
 	dateFormatter.dateStyle = .medium
 	dateFormatter.timeStyle = .short
 	//	let lengthCheck = todaysResults.sorted(by: {$0.podcast.name.count > $1.podcast.name.count})
-	print("For \(dateFormatter.string(from: Date()))")
+	logger.info("For \(dateFormatter.string(from: Date()), privacy: .public)")
 	var outputString = ""
 	for result in todaysResults {
 		let url = result.podcast.url
@@ -25,7 +27,7 @@ func writeResults(for todaysResults: [Rank]) -> () {
 		let clickableName = generateExcelLink(for: name, with: url.absoluteString)
 		outputString += "\(rankWithPadding)\t\(clickableAuthor)\t\(clickableName)\t\(genres)\n"
 		let printString = "\(rankWithPadding)\t\(author)\t\(name)"
-		print(printString)
+		logger.log("\(printString, privacy: .public)")
 	}
 	let exportFormatter = DateFormatter()
 	exportFormatter.dateStyle = .medium
@@ -33,13 +35,13 @@ func writeResults(for todaysResults: [Rank]) -> () {
 	do {
 		try generateDirectory(for: Preferences.Save.fileDirectory)
 	} catch {
-		print("Could not generate directory at \(Preferences.Save.fileDirectory)")
+		logger.error("Could not generate directory at \(Preferences.Save.fileDirectory, privacy: .auto)")
 	}
 	do {
 		let fileURL = try generateURLFor(fileName: fileName)
 		let exportData = outputString.data(using: .unicode, allowLossyConversion: false)
 		write(data: exportData!, to: fileURL)
 	} catch {
-		print("Could not generate url for \(fileName)")
+		logger.error("Could not generate url for \(fileName, privacy: .auto)")
 	}
 }

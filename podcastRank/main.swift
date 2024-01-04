@@ -8,4 +8,4 @@
 
 import Foundation
 
-writeResults(for: dailyResults())
+archive(dailyResults())

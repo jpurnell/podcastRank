@@ -7,14 +7,16 @@
 //
 
 import Foundation
+import OSLog
 
 func getData(from urlString: String) -> Data {
+	let logger = Logger(subsystem: "podcastRank > Podcast Rank > getData", category: "getData")
 	let dataURL = URL(string: urlString)
 	var returnData = Data()
 	do {
 		returnData = try Data.init(contentsOf: dataURL!)
 	} catch {
-		print("No data at url \(urlString)")
+		logger.error("No data at url \(urlString, privacy: .public)")
 	}
 	return returnData
 }
