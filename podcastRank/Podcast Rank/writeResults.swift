@@ -21,11 +21,13 @@ func archive(_ todaysResults: [Rank]) -> () {
 		let url = result.podcast.url
 		let genres = result.podcast.genres.map({$0.name}).joined(separator: "\t")
 		let rankWithPadding = "\(String(result.rank).leftPadding(toLength: 3, withPad: " "))."
+		let artwork = "Logo"
 		let author = result.podcast.artistName
 		let name = result.podcast.name
+		let clickableArt = generateExcelLink(for: artwork, with: result.podcast.artworkUrl100.absoluteString)
 		let clickableAuthor = generateExcelLink(for: author, with: result.podcast.artistUrl?.absoluteString)
 		let clickableName = generateExcelLink(for: name, with: url.absoluteString)
-		outputString += "\(rankWithPadding)\t\(clickableAuthor)\t\(clickableName)\t\(genres)\n"
+		outputString += "\(rankWithPadding)\t\(clickableArt)\t\(clickableAuthor)\t\(clickableName)\t\(genres)\n"
 		let printString = "\(rankWithPadding)\t\(author)\t\(name)"
 		logger.log("\(printString, privacy: .public)")
 	}
